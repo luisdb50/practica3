@@ -1,0 +1,11 @@
+La direccion de tecnologia requiere la elaboracion de un modulo para una aplicacion, que permita el registro de empleados a travez de un formulario con los siguientes requerimientos:
+
+El formulario registro nombre apellido cedula   X
+El boton de registro   X
+Notificacion de registro exitoso   X
+interfaz dividida
+logo de la divicion de tecnologia
+formulario
+experiencia de usuario
+requerimientos tecnicos
+debe de tener un boton flotante que al presionar lleve a una pantalla de inicio de bienvenida
