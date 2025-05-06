@@ -1,10 +1,37 @@
+#main {
+    display: flex;
+    height: 100vh;
+}
+
+#main_welcome {
+    flex: 1;
+}
+
+#main_welcome p {
+    font-size: 50px;
+    color: #00b257;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #888888;
+}
+
 #content {
     width: 100vw;
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #d3e1e6;
+    background: #3CA55C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    flex: 1;
+}
+
+#logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #form {
@@ -12,9 +39,10 @@
     z-index: 1000;
     padding: 3vw;
     border-radius: 5px;
-    width: 40%;
+    width: 60%;
     box-shadow: 1px 1px 10px #bfbfbf;
 }
+
 
 #header {
     width: 100vw;
@@ -35,6 +63,13 @@
     width: 40%;
 }
 
+#main_welcome {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #particles-js {
     width: 100vw;
     height: 100vh;
@@ -45,10 +80,26 @@
 .button_send {
     width: 100%;
     margin-top: 10px;
-    background-color: #0599e1 !important;
+    background-color: #3CA55C !important;
     color: #ffffff !important;
 }
 
 .button_send:hover {
-    background-color: #0598e192 !important;
+    background-color: #52dc7b !important;
+}
+
+.accordion-button {
+    color: #ffffff !important;
+    background-color: #00b257 !important;
+}
+
+.alert-primary {
+    color: #ffffff !important;
+    background-color: #00b257 !important;
+}
+
+.float_buttom {
+    position: absolute;
+    top: 90vh;
+    right: 20px;
 }

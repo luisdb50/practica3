@@ -33,20 +33,6 @@ const server = http.createServer((req, res) => {
     });
 });
 
-const { exec } = require('child_process');
-
-exec('watchman watch ./', (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Error: ${error.message}`);
-        return;
-    }
-    if (stderr) {
-        console.error(`STDERR: ${stderr}`);
-        return;
-    }
-    console.log(`STDOUT: ${stdout}`);
-});
-
 server.listen(3000, () => {
     console.log('Servidor corriendo en http://localhost:3000');
 });
